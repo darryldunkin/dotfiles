@@ -7,3 +7,7 @@ set paste
 set modeline
 set modelines=5
 set nocompatible
+syntax on
+
+"set rtp+=/home/darryld/git/powerline/powerline/bindings/vim
+
