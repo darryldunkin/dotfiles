@@ -4,5 +4,5 @@ LINKS=(.vimrc .vim .tmux.conf .minttyrc .atom)
 
 for i in  "${LINKS[@]}"
 do
-  ln -s ~/dotfiles/$i ~/test
+  ln -s ~/dotfiles/$i ~/
 done
