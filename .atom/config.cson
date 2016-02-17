@@ -1,0 +1,21 @@
+"*":
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    openEmptyEditorOnStart: false
+  themes: [
+      "isotope-ui"
+      "seti-syntax"
+    ]
+  editor:
+    invisibles:
+      cr: false
+      eol: false
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
+  welcome:
+    showOnStartup: false
+  "Sublime-Style-Column-Selection":
+    mouseButtonTrigger: "Middle"
+    selectKeyTrigger: "None"

@@ -1,0 +1,13 @@
+'atom-text-editor.vim-mode':
+  'ctrl-c': 'core:copy'
+'atom-workspace atom-text-editor':
+  'ctrl-left': 'unset!'
+  'ctrl-right': 'unset!'
+'atom-pane':
+  'ctrl-right': 'pane:show-next-item'
+  'ctrl-left': 'pane:show-previous-item'
+  'ctrl-a left': 'window:focus-pane-on-left'
+  'ctrl-a right': 'window:focus-pane-on-right'
+  'ctrl-a |': 'pane:split-right'
+  'ctrl-a -': 'pane:split-down'
+  'ctrl-a x': 'pane:close'
