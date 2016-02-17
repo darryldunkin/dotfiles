@@ -1,6 +1,8 @@
 #!/bin/bash
 
-ln -s ~/dotfiles/.vimrc ~/
-ln -s ~/dotfiles/.vim ~/
-ln -s ~/dotfiles/.tmux.conf ~/
-ln -s ~/dotfiles/.minttyrc ~/
+LINKS=(.vimrc .vim .tmux.conf .minttyrc .atom)
+
+for i in  "${LINKS[@]}"
+do
+  ln -s ~/dotfiles/$i ~/test
+done
