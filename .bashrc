@@ -1,0 +1,20 @@
+alias ls='ls -al --color'
+alias vi='vim'
+
+# Colored man pages:
+# http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/
+PAGER="less"
+export LESS_TERMCAP_mb=$'\E[01;31m'     # enter_blink_mode
+export LESS_TERMCAP_md=$'\E[01;38;5;74m' # enter_bold_mode
+export LESS_TERMCAP_so=$'\E[38;5;016m\E[48;5;220m' # enter_standout_mode
+export LESS_TERMCAP_us=$'\E[04;38;5;146m' # enter_underline_mode
+export LESS_TERMCAP_me=$'\E[0m'         # exit_attribute_mode
+export LESS_TERMCAP_se=$'\E[0m'         # exit_standout_mode
+export LESS_TERMCAP_ue=$'\E[0m'         # exit_underline_mode
+
+# tailoring `less'
+LESS="--quit-at-eof --ignore-case --long-prompt --raw-control-chars"
+export GROFF_NO_SGR=1
+
+export PS1="\[\033[38;5;6m\]\u\[\033[38;5;10m\]@\[\033[38;5;2m\]\h\[\033[38;5;15m\] \[\033[38;5;5m\]\W\[\033[38;5;15m\] \\$\]\[$(tput sgr0)\] "
+
