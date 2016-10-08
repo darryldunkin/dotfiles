@@ -1,6 +1,11 @@
 alias ls='ls -al --color'
 alias vi='vim'
 
+# Git branch
+git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 # Colored man pages:
 # http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/
 PAGER="less"
@@ -16,5 +21,5 @@ export LESS_TERMCAP_ue=$'\E[0m'         # exit_underline_mode
 LESS="--quit-at-eof --ignore-case --long-prompt --raw-control-chars"
 export GROFF_NO_SGR=1
 
-export PS1="\[\033[38;5;6m\]\u\[\033[38;5;10m\]@\[\033[38;5;2m\]\h\[\033[38;5;15m\] \[\033[38;5;5m\]\W\[\033[38;5;15m\] \\$\]\[$(tput sgr0)\] "
+export PS1="\[\033[38;5;6m\]\u\[\033[38;5;10m\]@\[\033[38;5;2m\]\h\[\033[38;5;15m\] \[\033[38;5;5m\]\W\[\033[38;5;15m\]\$(git_branch) \\$\]\[$(tput sgr0)\] "
 
