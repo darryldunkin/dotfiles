@@ -21,5 +21,21 @@ export LESS_TERMCAP_ue=$'\E[0m'         # exit_underline_mode
 LESS="--quit-at-eof --ignore-case --long-prompt --raw-control-chars"
 export GROFF_NO_SGR=1
 
-export PS1="\[\033[38;5;6m\]\u\[\033[38;5;10m\]@\[\033[38;5;2m\]\h\[\033[38;5;15m\] \[\033[38;5;5m\]\W\[\033[38;5;15m\]\$(git_branch) \\$\]\[$(tput sgr0)\] "
+# hostname colors
+case "$HOSTNAME" in
+  alpine)
+    HOSTCOLOR="\[\033[38;5;2m\]"
+    ;;
+  caribou)
+    HOSTCOLOR="\[\033[38;5;12m\]"
+    ;;
+  chinook)
+    HOSTCOLOR="\[\033[38;5;4m\]"
+    ;;
+  *)
+    HOSTCOLOR="\[\033[38;5;6m\]"
+    ;;
+esac
+
+export PS1="\[\033[38;5;6m\]\u\[\033[38;5;10m\]@$HOSTCOLOR\h \[\033[38;5;5m\]\W\[\033[38;5;15m\]\$(git_branch) \\$\]\[$(tput sgr0)\] "
 
