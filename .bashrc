@@ -1,12 +1,14 @@
 alias ls='ls -al --color'
 alias vi='vim'
 
-# Git branch
+export LS_COLORS='ow=91;106'
+
+# git branch
 git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-# Colored man pages:
+# colored man pages:
 # http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/
 PAGER="less"
 export LESS_TERMCAP_mb=$'\E[01;31m'     # enter_blink_mode
