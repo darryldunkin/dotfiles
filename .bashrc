@@ -39,5 +39,5 @@ case "$HOSTNAME" in
     ;;
 esac
 
-export PS1="\[\033[38;5;6m\]\u\[\033[38;5;10m\]@$HOSTCOLOR\h \[\033[38;5;5m\]\W\[\033[38;5;15m\]\$(git_branch) \\$\]\[$(tput sgr0)\] "
+export PS1="\[\033[38;5;6m\]\u\[\033[38;5;10m\]@$HOSTCOLOR\h \[\033[38;5;5m\]\W\[\033[38;5;15m\]\$(git_branch) \\$\[$(tput sgr0)\] "
 

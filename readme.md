@@ -6,3 +6,7 @@ cd dotfiles
 ./mklinks.sh
 apm stars --install
 ```
+
+# cygwin
+
+Run mintty.exe with *-B /usr/bin/bash -l*
