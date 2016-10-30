@@ -19,9 +19,11 @@ export LESS_TERMCAP_me=$'\E[0m'         # exit_attribute_mode
 export LESS_TERMCAP_se=$'\E[0m'         # exit_standout_mode
 export LESS_TERMCAP_ue=$'\E[0m'         # exit_underline_mode
 
-# Misc
-alias ww='curl wttr.in/millcreek'
+# Weather
 alias moon='curl wttr.in/moon'
+ww() {
+  curl wttr.in/${1:-millcreek}
+}
 metar() {
   curl http://tgftp.nws.noaa.gov/data/observations/metar/stations/${1:-KAWO}.TXT
 }
