@@ -22,8 +22,15 @@ export LESS_TERMCAP_ue=$'\E[0m'         # exit_underline_mode
 # Misc
 alias ww='curl wttr.in/millcreek'
 alias moon='curl wttr.in/moon'
-weather() {
+metar() {
   curl http://tgftp.nws.noaa.gov/data/observations/metar/stations/${1:-KAWO}.TXT
+}
+taf() {
+  curl http://tgftp.nws.noaa.gov/data/forecasts/taf/stations/${1:-KPAE}.TXT
+}
+area() {
+  curl http://tgftp.nws.noaa.gov/data/observations/state_roundup/wa/waz503.txt # ~KAWO
+  curl http://tgftp.nws.noaa.gov/data/observations/state_roundup/wa/waz507.txt # ~KSEA
 }
 
 # tailoring `less'
