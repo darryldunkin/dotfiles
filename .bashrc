@@ -32,7 +32,7 @@ taf() {
 }
 area() {
   curl http://tgftp.nws.noaa.gov/data/observations/state_roundup/wa/waz503.txt # ~KAWO
-  curl http://tgftp.nws.noaa.gov/data/observations/state_roundup/wa/waz507.txt # ~KSEA
+#  curl http://tgftp.nws.noaa.gov/data/observations/state_roundup/wa/waz507.txt # ~KSEA
 }
 
 # tailoring `less'
