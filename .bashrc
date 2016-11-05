@@ -22,7 +22,7 @@ export LESS_TERMCAP_ue=$'\E[0m'         # exit_underline_mode
 # Weather
 alias moon='curl wttr.in/moon'
 ww() {
-  curl wttr.in/${1:-millcreek}
+  curl wttr.in/${1:-98036}
 }
 metar() {
   curl http://tgftp.nws.noaa.gov/data/observations/metar/stations/${1:-KAWO}.TXT
