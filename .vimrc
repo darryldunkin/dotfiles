@@ -1,7 +1,11 @@
+call pathogen#infect()
+call pathogen#helptags()
+let g:ctrlp_show_hidden = 1
+
 set autoindent
-set softtabstop=2
-set shiftwidth=2
-set tabstop=2
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
 set expandtab
 set modeline
 set modelines=5
