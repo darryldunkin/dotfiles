@@ -9,4 +9,13 @@ apm stars --install
 
 # cygwin
 
-Run mintty.exe with *-B /usr/bin/bash -l*
+Run mintty.exe with:
+```
+mintty -B frame -
+```
+
+# powerline
+
+```
+pip install powerline-status
+```

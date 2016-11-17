@@ -3,7 +3,7 @@
 set -o nounset
 set -o pipefail
 
-LINKS=(.vimrc .vim .tmux.conf .minttyrc .atom)
+LINKS=(.vimrc .vim .tmux.conf .minttyrc .atom powerline)
 
 # Make generic links
 for i in  "${LINKS[@]}"
