@@ -1,6 +1,5 @@
 call pathogen#infect()
 call pathogen#helptags()
-let g:ctrlp_show_hidden = 1
 
 set autoindent
 set softtabstop=4
