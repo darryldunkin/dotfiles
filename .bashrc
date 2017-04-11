@@ -50,6 +50,9 @@ case "$HOSTNAME" in
   chinook)
     HOSTCOLOR="\[\033[38;5;4m\]"
     ;;
+  gimli)
+    HOSTCOLOR="\[\033[38;5;51m\]"
+    ;;
   *)
     HOSTCOLOR="\[\033[38;5;6m\]"
     ;;
