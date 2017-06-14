@@ -10,4 +10,4 @@ git submodule init && git submodule update
 
 # cygwin
 
-Run mintty.exe with *-B /usr/bin/bash -l*
+Run mintty.exe with *-B frame -*
