@@ -42,13 +42,16 @@ case "$HOSTNAME" in
     HOSTCOLOR="\[\033[38;5;2m\]"
     ;;
   caribou)
-    HOSTCOLOR="\[\033[38;5;12m\]"
+    HOSTCOLOR="\[\033[38;5;58\]"
     ;;
-  chinook)
+  carp)
     HOSTCOLOR="\[\033[38;5;4m\]"
     ;;
-  gimli)
-    HOSTCOLOR="\[\033[38;5;51m\]"
+  flamingo)
+    HOSTCOLOR="\[\033[38;5;162m\]"
+    ;;
+  glacier)
+    HOSTCOLOR="\[\033[38;5;12m\]"
     ;;
   *)
     HOSTCOLOR="\[\033[38;5;6m\]"
@@ -57,3 +60,6 @@ esac
 
 export PS1="\[\033[38;5;6m\]\u\[\033[38;5;10m\]@$HOSTCOLOR\h \[\033[38;5;5m\]\W\[\033[38;5;15m\]\$(git_branch) \\$\[$(tput sgr0)\] "
 
+export QT_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt6/plugins
+
+alias nanovna-saver='QT_IM_MODULE=xim; uv run NanoVNASaver'
